@@ -1,0 +1,32 @@
+Gestion d'éclairage
+	Allumage/extinction manuel
+	Allumage/extinction automatique des lumières en fonction de l'heure de la journée/temps dehors/état des volêts
+	Contrôle vocale avec differents modes d'éclairage(calme : lumière chaude et diffuse, tv : lumières du fond, etc)
+	Contrôle des lumières et modes de chaque pièce a distance
+Gestion d'accès a l'habitat, au bureau et au garage
+	Ouverture/fermeture manuelle (NFC avec montre/téléphone)
+	Poignées de porte avec lecteur d'empreintes
+	Restriction d'accès au bureau
+	Ouverture automatique lors de l'arrivée du véhicule (avec tracker)
+Gestion de la climatisation
+	Allumage/extinction manuel pour chaque pièce et contrôle
+	Contrôle automatique en fonction des résidents présent dans chaque pièce
+	Analyse des habitudes des habitants pour pre-chauffer/réfroidir certaines pieces
+Gestion des alarmes et des alertes en temps réel : de température, de gaz, de fumée
+	Notification des habitants
+	Sonnerie d'alarme
+	Extinction manuelle
+Gestion d'ouverture fermeture des volets des fenêtres
+	Ouverture/fermeture manuelle
+	Définir les horaires d'aération automatique
+	Analyse des habitudes des habitants pour ouvrir et fermer
+Détéction des incendies et des fuites de gaz	
+Gestion de la sécurité
+	Notification des mouvements détéctés en intérieur/jardin lors d'un mode voyage/nuit
+	Accès a distance aux caméras et enregistrement en cas de détéction de mouvements
+	Fermeture des portes a distance
+Gestion de l'habitat
+	Notification du manque des consommables (recharges de désodorisants, reservoir d'eau fraiche, etc)
+	Définir les horaires et fréquences d'arrosage
+	Remplissage/vidage de la piscine
+	Anti-stagnation d l'eau de la piscine

@@ -1,0 +1,60 @@
+<?xml-model href="Resto.xsd"?>
+<Restaurents>
+    <Resto Categorie="05*">
+        <Nom>Nom Resto 1</Nom>
+        <Note>10</Note>
+        <Adresse>
+            <Num>7</Num>
+            <Rue>Nom Rue</Rue>
+            <Ville>Nom Ville</Ville>
+            <Nom></Nom>
+            <Prenom></Prenom>
+        </Adresse>
+        <Tel>043 22 24 25</Tel>
+        <Fax>043212425</Fax>
+        <Menu>
+            <Prix Monnaie="EUR">20</Prix>
+            <Entrees>
+                <Entree>Description</Entree>
+                <Entree>Description</Entree>
+            </Entrees>
+            <Plats>
+                <Plat>Description</Plat>
+                <Plat>Description</Plat>
+            </Plats>
+            <Desserts>
+                <Dessert>Description</Dessert>
+                <Dessert>Description</Dessert>
+            </Desserts>
+        </Menu>
+    </Resto>
+
+    <Resto Categorie="04*">
+        <Nom>Nom Resto 2</Nom>
+        <Note>20</Note>
+        <Adresse>
+            <Num>08</Num>
+            <Rue>Nom Rue</Rue>
+            <Ville>Nom Ville</Ville>
+            <Nom></Nom>
+            <Prenom></Prenom>
+        </Adresse>
+        <Tel>043 22 24 25</Tel>
+        <Email>hamid@boualem.dz</Email>
+        <Menu>
+            <Prix Monnaie="DZD">3500</Prix>
+            <Entrees>
+                <Entree>Description</Entree>
+                <Entree>Description</Entree>
+            </Entrees>
+            <Plats>
+                <Plat>Description</Plat>
+                <Plat>Description</Plat>
+            </Plats>
+            <Desserts>
+                <Dessert>Description</Dessert>
+                <Dessert>Description</Dessert>
+            </Desserts>
+        </Menu>
+    </Resto>
+</Restaurents>

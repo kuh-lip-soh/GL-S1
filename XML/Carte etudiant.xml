@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New document created with EditiX at Sun Oct 02 09:17:02 GMT+01:00 2022 -->
+
+<?xml-stylesheet type="text/xsl" href="Carte etudiant.xsl"?>
+<?xml-model href="Carte etudiant.xsd"?>
+<Etudiants>
+	<Etudiant>
+		<Carte>
+			<NumeroCarte> 171737012152
+</NumeroCarte>
+			<Nom> OUAFI
+</Nom>
+			<Prenom> Mohammed Zakaria
+</Prenom>
+			<Naissance>
+				<Date>2000-06-06
+				</Date>
+				<Lieu>Tlemcen
+				</Lieu>
+			</Naissance>
+			<Filliere> MI
+</Filliere>
+			<AnneeUniversitaire> 2017/2018
+</AnneeUniversitaire>
+		</Carte>
+	</Etudiant>
+	<Etudiant>
+		<Carte>
+			<NumeroCarte> 181837012152
+</NumeroCarte>
+			<Nom> BEHLOULI
+</Nom>
+			<Prenom> Zoubir
+</Prenom>
+			<Naissance>
+				<Date>2000-01-01
+	</Date>
+				<Lieu>Tlemcen
+	</Lieu>
+			</Naissance>
+			<Filliere> MI
+</Filliere>
+			<AnneeUniversitaire> 2018/2019
+</AnneeUniversitaire>
+		</Carte>
+	</Etudiant>
+</Etudiants>

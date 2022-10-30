@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="TVille">
+        <xs:union memberTypes="xs:positiveInteger xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="TNote">
+                    <xs:restriction base="xs:double">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="20"/>
+                    </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TTel">
+                <xs:list itemType="xs:unsignedByte" />
+    </xs:simpleType>
+
+    <xs:complexType name="TAdresse">
+        <xs:sequence>
+            <xs:element name="Num" type="xs:int"/>
+            <xs:element name="Rue" type="xs:string"/>
+            <xs:element name="Ville" type="TVille"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:group name="GEntree">
+        <xs:sequence>
+        <xs:element name="Entree" type="xs:string"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="TEntrees">
+            <xs:group ref="GEntree" maxOccurs="10"/>
+    </xs:complexType>
+
+    <xs:group name="GPlat">
+        <xs:sequence>
+        <xs:element name="Plat" type="xs:string"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="TPlats">
+            <xs:group ref="GPlat" maxOccurs="10"/>
+    </xs:complexType>
+
+    <xs:group name="GDessert">
+        <xs:sequence>
+        <xs:element name="Dessert" type="xs:string"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="TDesserts">
+            <xs:group ref="GDessert" maxOccurs="10"/>
+    </xs:complexType>
+
+    <xs:complexType name="TMenu">
+        <xs:sequence>
+            <xs:element name="Prix" type="EPrix"/>
+            <xs:element name="Entrees" type="TEntrees"/>
+            <xs:element name="Plats" type="TPlats"/>
+            <xs:element name="Desserts" type="TDesserts"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    
+    <xs:complexType name="TResto">
+        <xs:sequence>
+            <xs:element name="Nom" type="xs:string"/>
+            <xs:element name="Note" type="TNote"/>
+            <xs:element name="Adresse" type="EAdresse"/>           
+            <xs:element name="Tel" type="TTel"/>
+            <xs:choice>
+                <xs:element name="Fax" type="xs:string"/>
+                <xs:element name="Email" type="xs:string"/>
+            </xs:choice>
+            <xs:element name="Menu" type="TMenu"/>
+        </xs:sequence>
+        <xs:attribute name="Categorie" type="xs:string"/>
+    </xs:complexType>
+    <xs:group name="GResto">
+        <xs:sequence>
+            <xs:element name="Resto" type="TResto"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="TRestaurents">
+       <xs:group ref="GResto" maxOccurs="10"/>
+    </xs:complexType>
+
+    <xs:element name="Restaurents" type="TRestaurents"/>
+
+    <xs:complexType name="EAdresse">
+        <xs:complexContent>
+            <xs:extension base="TAdresse">
+                <xs:sequence>
+                    <xs:element name="Nom" type="xs:string"/>
+                    <xs:element name="Prenom" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="EPrix">
+        <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+                <xs:attribute name="Monnaie" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

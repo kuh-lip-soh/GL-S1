@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Etudiants.xsl"?>
+<etudiants>
+    <etudiant>
+        <carteEtd num="N1">
+            <Nom>GHENNOU</Nom>
+            <Prenom>ABDELHADI MOHAMMED</Prenom>
+            <Prenom></Prenom>
+            <dateN jour="16" mois="06" annee="2000"></dateN>
+            <lieuN num="08">
+                <ville>bechar</ville>
+            </lieuN>
+            <filliere>
+                <specialite>L3 informatique</specialite>
+            </filliere>
+        </carteEtd>
+    </etudiant>
+    <etudiant>
+        <carteEtd num="N2">
+            <Nom>benhamou</Nom>
+            <Prenom>khaled</Prenom>
+            <Prenom></Prenom>
+            <dateN jour="16" mois="07" annee="2001"></dateN>
+            <lieuN num="13">
+                <ville>tlemcen</ville>
+            </lieuN>
+            <filliere>
+                <specialite>L2 informatique</specialite>
+            </filliere>
+        </carteEtd>
+    </etudiant>
+    <etudiant>
+        <carteEtd num="N3">
+            <Nom>morad</Nom>
+            <Prenom>mahmoud</Prenom>
+            <Prenom>ilyes</Prenom>
+            <dateN jour="10" mois="02" annee="2000"></dateN>
+            <lieuN num="16">
+                <ville>alger</ville>
+            </lieuN>
+            <filliere>
+                <specialite>M1 informatique</specialite>
+            </filliere>
+        </carteEtd>
+    </etudiant>
+    <etudiant>
+        <carteEtd num="N4">
+            <Nom>benguela</Nom>
+            <Prenom>mehdi</Prenom>
+            <Prenom></Prenom>
+            <dateN jour="17" mois="01" annee="2000"></dateN>
+            <lieuN num="13">
+                <ville>tlemcen</ville>
+            </lieuN>
+            <filliere>
+                <specialite>M1 informatique</specialite>
+            </filliere>
+        </carteEtd>
+    </etudiant>
+    <etudiant>
+        <carteEtd num="N5">
+            <Nom>behlouli</Nom>
+            <Prenom>zoubir mohammed</Prenom>
+            <Prenom></Prenom>
+            <dateN jour="7" mois="04" annee="2000"></dateN>
+            <lieuN num="13">
+                <ville>tlemcen</ville>
+            </lieuN>
+            <filliere>
+                <specialite></specialite>
+            </filliere>
+        </carteEtd>
+    </etudiant>
+
+</etudiants>

@@ -1,0 +1,13 @@
+Balance alimentaire
+
+exigences fonctionelles :
+-Tare
+-Allumage et extinction automatique : Detecteur de poids
+-Méchanisme de pesage précis : de 0.01G a 3KG
+
+
+exigences non fonctionelles :
+-Étanche
+-Facile a ranger : Dimensions reduites/poids leger
+-Ne consomme pas trop de piles
+-Resistant a la chaleur : matériaux résistants a +100°C

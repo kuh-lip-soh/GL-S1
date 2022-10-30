@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="TNaissance">
+        <xs:sequence>
+            <xs:element name="Date" type="xs:date" />
+            <xs:element name="Lieu" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TCarte">
+        <xs:sequence>
+            <xs:element name="NumeroCarte" type="xs:string" />
+            <xs:element name="Nom" type="xs:string" />
+            <xs:element name="Prenom" type="xs:string" />
+            <xs:element name="Naissance" type="TNaissance" />
+            <xs:element name="Filliere" type="xs:string" />
+            <xs:element name="AnneeUniversitaire" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TEtudiant">
+        <xs:sequence>
+            <xs:element name="Carte" type="TCarte" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TEtudiants">
+        <xs:sequence>
+            <xs:element name="Etudiant" type="TEtudiant" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Etudiants" type="TEtudiants" />
+</xs:schema>
