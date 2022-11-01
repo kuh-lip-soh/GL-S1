@@ -31,7 +31,7 @@ public class CalculatorView extends JFrame{
 		JPanel calcPanel = new JPanel();
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(600, 200);
+		this.setSize(600, 75);
 		
 		calcPanel.add(firstNumber);
 		calcPanel.add(operation);
