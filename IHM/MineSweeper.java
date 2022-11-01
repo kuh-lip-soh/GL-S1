@@ -1,6 +1,20 @@
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 public class MineSweeper extends JFrame implements ActionListener,
         MouseListener {
@@ -14,7 +28,7 @@ public class MineSweeper extends JFrame implements ActionListener,
     boolean lost = false;
     boolean won = false;
     int[] numbers = new int[rows * cols];
-    JButton[] buttons = new JButton[rows * cols];
+    JButton[] cells = new JButton[rows * cols];
     boolean[] clickdone = new boolean[rows * cols];
     JMenuItem newGameButton = new JMenuItem("New game");
     JLabel mineLabel = new JLabel("Mines: " + numMines + " Cells marked: 0");
@@ -24,7 +38,7 @@ public class MineSweeper extends JFrame implements ActionListener,
         p.setLayout(layout);
         setupI();
         for (int i = 0; i < (rows * cols); i++) {
-            p.add(buttons[i]);
+            p.add(cells[i]);
         }
         JMenuBar mb = new JMenuBar();
         JMenu m = new JMenu("File");
@@ -122,11 +136,11 @@ public class MineSweeper extends JFrame implements ActionListener,
                 mines[(rows * y) + x] = false;
                 clickdone[(rows * y) + x] = false;
                 clickable[(rows * y) + x] = true;
-                buttons[(rows * y) + x] = new JButton();
-                buttons[(rows * y) + x].setPreferredSize(new Dimension(30, 30));
-                buttons[(rows * y) + x].setBorder(BorderFactory.createBevelBorder(0));
-                buttons[(rows * y) + x].addActionListener(this);
-                buttons[(rows * y) + x].addMouseListener(this);
+                cells[(rows * y) + x] = new JButton();
+                cells[(rows * y) + x].setPreferredSize(new Dimension(30, 30));
+                cells[(rows * y) + x].setBorder(BorderFactory.createBevelBorder(0));
+                cells[(rows * y) + x].addActionListener(this);
+                cells[(rows * y) + x].addMouseListener(this);
             }
         }
         fillMines();
@@ -138,14 +152,14 @@ public class MineSweeper extends JFrame implements ActionListener,
         p = new JPanel();
         layout = new GridLayout(rows, cols);
         p.setLayout(layout);
-        buttons = new JButton[rows * cols];
+        cells = new JButton[rows * cols];
         mines = new boolean[rows * cols];
         clickdone = new boolean[rows * cols];
         clickable = new boolean[rows * cols];
         numbers = new int[rows * cols];
         setupI();
         for (int i = 0; i < (rows * cols); i++) {
-            p.add(buttons[i]);
+            p.add(cells[i]);
         }
         this.add(p);
         this.pack();
@@ -159,8 +173,8 @@ public class MineSweeper extends JFrame implements ActionListener,
                 mines[(rows * y) + x] = false;
                 clickdone[(rows * y) + x] = false;
                 clickable[(rows * y) + x] = true;
-                buttons[(rows * y) + x].setEnabled(true);
-                buttons[(rows * y) + x].setText("");
+                cells[(rows * y) + x].setEnabled(true);
+                cells[(rows * y) + x].setText("");
             }
         }
         fillMines();
@@ -177,7 +191,7 @@ public class MineSweeper extends JFrame implements ActionListener,
         if (!won) {
             for (int x = 0; x < rows; x++) {
                 for (int y = 0; y < cols; y++) {
-                    if (e.getSource() == buttons[(rows * y) + x]
+                    if (e.getSource() == cells[(rows * y) + x]
                             && !won && clickable[(rows * y) + x]) {
                         doCheck(x, y);
                         break;
@@ -205,16 +219,16 @@ public class MineSweeper extends JFrame implements ActionListener,
             int n = 0;
             for (int x = 0; x < rows; x++) {
                 for (int y = 0; y < cols; y++) {
-                    if (e.getSource() == buttons[(rows * y) + x]) {
+                    if (e.getSource() == cells[(rows * y) + x]) {
                         clickable[(rows * y) + x] = !clickable[(rows * y)
                                 + x];
                     }
                     if (!clickdone[(rows * y) + x]) {
                         if (!clickable[(rows * y) + x]) {
-                            buttons[(rows * y) + x].setText("X");
+                            cells[(rows * y) + x].setText("X");
                             n++;
                         } else {
-                            buttons[(rows * y) + x].setText("");
+                            cells[(rows * y) + x].setText("");
                         }
                         mineLabel.setText("Mines: " + numMines + " Cells marked: "
                                 + n);
@@ -246,38 +260,38 @@ public class MineSweeper extends JFrame implements ActionListener,
         int downright = (rows * (y + 1)) + (x + 1);
 
         clickdone[cur] = true;
-        buttons[cur].setEnabled(false);
+        cells[cur].setEnabled(false);
         if (numbers[cur] == 0 && !mines[cur] && !lost && !won) {
             if (u && !won) {
                 if (!clickdone[up] && !mines[up]) {
                     clickdone[up] = true;
-                    buttons[up].doClick();
+                    cells[up].doClick();
                 }
                 if (l && !won) {
                     if (!clickdone[upleft] && numbers[upleft] != 0
                             && !mines[upleft]) {
                         clickdone[upleft] = true;
-                        buttons[upleft].doClick();
+                        cells[upleft].doClick();
                     }
                 }
                 if (r && !won) {
                     if (!clickdone[upright] && numbers[upright] != 0
                             && !mines[upright]) {
                         clickdone[upright] = true;
-                        buttons[upright].doClick();
+                        cells[upright].doClick();
                     }
                 }
             }
             if (d && !won) {
                 if (!clickdone[down] && !mines[down]) {
                     clickdone[down] = true;
-                    buttons[down].doClick();
+                    cells[down].doClick();
                 }
                 if (l && !won) {
                     if (!clickdone[downleft] && numbers[downleft] != 0
                             && !mines[downleft]) {
                         clickdone[downleft] = true;
-                        buttons[downleft].doClick();
+                        cells[downleft].doClick();
                     }
                 }
                 if (r && !won) {
@@ -285,30 +299,30 @@ public class MineSweeper extends JFrame implements ActionListener,
                             && numbers[downright] != 0
                             && !mines[downright]) {
                         clickdone[downright] = true;
-                        buttons[downright].doClick();
+                        cells[downright].doClick();
                     }
                 }
             }
             if (l && !won) {
                 if (!clickdone[left] && !mines[left]) {
                     clickdone[left] = true;
-                    buttons[left].doClick();
+                    cells[left].doClick();
                 }
             }
             if (r && !won) {
                 if (!clickdone[right] && !mines[right]) {
                     clickdone[right] = true;
-                    buttons[right].doClick();
+                    cells[right].doClick();
                 }
             }
         } else {
-            buttons[cur].setText("" + numbers[cur]);
+            cells[cur].setText("" + numbers[cur]);
             if (!mines[cur] && numbers[cur] == 0) {
-                buttons[cur].setText("");
+                cells[cur].setText("");
             }
         }
         if (mines[cur] && !won) {
-            buttons[cur].setText("X");
+            cells[cur].setText("X");
             doLose();
         }
     }
@@ -345,7 +359,7 @@ public class MineSweeper extends JFrame implements ActionListener,
             lost = true;
             for (int i = 0; i < rows * cols; i++) {
                 if (!clickdone[i]) {
-                    buttons[i].doClick(0);
+                    cells[i].doClick(0);
                 }
             }
             JOptionPane.showMessageDialog(null,
