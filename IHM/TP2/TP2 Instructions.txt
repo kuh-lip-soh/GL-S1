@@ -1,0 +1,28 @@
+TP2 IHM : OUAFI Mohammed Zakaria & Benguella Mehdi Oussama
+
+Opérations a 2 variables :
++ addition
+- soustraction
+* multiplication
+/ division (avec exception /0)
+
+Opérations a 1 variable :
+e exponentielle
+p exposant
+! factoriel
+m modulo
+l logarithme népérien
+
+Opérations géometriques (a 1 variable) :
+s sinus
+c cosinus
+t tangente
+S sinus-1
+C cosinus-1
+T tangente-1
+
+Opérations binaire a 2 variables :
+b+ addition
+b- soustraction
+b* multiplication
+b/ division
