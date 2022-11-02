@@ -23,7 +23,7 @@ public class CalculatorView extends JFrame{
 	private JTextField operation = new JTextField(2);
 	private JTextField secondNumber = new JTextField(10);
 	private JButton calculateButton = new JButton("Calculate");
-	private JTextField calcSolution = new JTextField(10);
+	private JTextField calcSolution = new JTextField(20);
 	
 	CalculatorView(){
 		
@@ -31,7 +31,7 @@ public class CalculatorView extends JFrame{
 		JPanel calcPanel = new JPanel();
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(600, 75);
+		this.setSize(700, 80);
 		
 		calcPanel.add(firstNumber);
 		calcPanel.add(operation);
@@ -44,15 +44,15 @@ public class CalculatorView extends JFrame{
 			
 	}
 	
-	public int getFirstNumber(){
+	public double getFirstNumber(){
 		
-		return Integer.parseInt(firstNumber.getText());
+		return Double.parseDouble(firstNumber.getText());
 		
 	}
 	
-	public int getSecondNumber(){
+	public double getSecondNumber(){
 		
-		return Integer.parseInt(secondNumber.getText());
+		return Double.parseDouble(secondNumber.getText());
 		
 	}
         
@@ -68,9 +68,9 @@ public class CalculatorView extends JFrame{
 		
 	}
 	
-	public void setCalcSolution(int solution){
+	public void setCalcSolution(String solution){
 		
-		calcSolution.setText(Integer.toString(solution));
+		calcSolution.setText(solution);
 		
 	}
 	
