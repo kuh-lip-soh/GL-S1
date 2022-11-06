@@ -1,0 +1,51 @@
+GESTION D'ÉCLAIRAGE :
+l'utilisateur a la possibilité d'allumer la lumière manuellement.
+l'utilisateur a la possibilité d'éteindre la lumière manuellement.
+Le système regle la luminosite a l'interieur en fonction de la luminosite detecter a l'éxterieur.
+Le système doit réagir aux commandes vocales donnés par les utilisateurs pour contrôler les lumières.
+Le système permet aux utilisateurs de programmer des éclairages d'ambiance.
+Le système donne accés aux utilisateurs a des éclairages d'ambiance.
+Le système permet aux utilisateurs d'allumer la lumière a distance.
+Le système permet aux utilisateurs d'éteindre la lumière a distance.
+
+GESTION D'ACCÉS A L'HABITAT :
+Le système doit authentifier les utilisateurs pour leur donner l'accés a l'habitat via un scanner d'empreintes.
+Le système doit authentifier les utilisateurs pour leur donner l'accés a l'habitat via un scanner d'iris.
+Le système permet aux utilisateurs d'acceder a l'habitation via une clé.
+Le système permet a l'administrateur de dévérouiller l'habitat a distance.
+Le système restreint l'accés au bureau a certains utilisateurs.
+
+GARAGE:
+Le système permet aux utilisateurs d'ouvrir le garage a distance via téléphone.
+Le système permet aux utilisateurs de fermer le garage a distance via téléphone.
+L'utilisateur a la possibilité d'ouvrir le garage manuellement.
+L'utilisateur a la possibilité de fermer le garage manuellement.
+
+GESTION DE LA CLIMATISATION :
+L'utilisateur a la possibilité de contrôler la climatisation dans chaque pièce manuellement.
+Le système maintient automatiquement la température parametrée dans l'habitat.
+Le système analyse les habitudes des utilisateurs pour automatiser la climatisation.
+
+GESTION DES FENETRES ET VOLÊTS:
+L'utilisateur a la possibilité d'ouvrir les fenètres et volêts manuellement.
+L'utilisateur a la possibilité de fermer les fenètres et volêts manuellement.
+Le système permet aux utilisateurs de définir des horaires d'aération automatique.
+Le système détécte le mauvais temps a l'éxterieur pour fermer automatiquement les fenètres.
+
+GESTION DES ALARMES :
+Le système détécte des fumées et sonne une alarme.
+Le système détécte des gaz et sonne une alarme.
+Le système détécte des hautes températures et sonne une alarme.
+Le système notifie les habitants en cas de danger.
+L'utilisateur a la possibilité d'éteindre l'alarme.
+
+GESTION DE LA SÉCURITÉ :
+Le système détécte les mouvements de nuit et notifie l'administrateur de l'habitat.
+Le système permet a l'administrateur d'acceder a distance aux caméras de vidéosurveillance.
+le système permet a l'administrateur d'enregistrer les images de vidéosurveillance.
+
+GESTION DE LA PISCINE:
+Le système permet a l'utilisateur de lancer le remplissage de la piscine.
+Le système permet a l'utilisateur de lancer le vidage de la piscine.
+Le système garde a niveau l'eau de la piscine.
+Le système empeche automatiquement l'eau de stagner.

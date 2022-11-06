@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="TAdresse">
+        <xs:sequence>
+            <xs:element name="Rue" type="xs:string"/>
+            <xs:element name="Ville" type="xs:string"/>
+            <xs:element name="Pays" type="xs:string"/>
+        </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="TTel">
+    <xs:list itemType="xs:unsignedByte" />
+</xs:simpleType>
+
+<xs:complexType name="TClient">
+            <xs:all>
+                <xs:element name="Nom" type="xs:string" minOccurs="1"/>
+                <xs:element name="Prenom" type="xs:string" minOccurs="1"/>      
+                    <xs:element name="Tel" type="TTel" minOccurs="0"/>
+                <xs:element name="Adresse" type="xs:string TAdresse"/>
+            </xs:all>
+</xs:complexType>
+
+<!--
+<xs:complexType name="EClient">
+    <xs:complexContent>
+        <xs:extension base="TClient">
+            <xs:sequence>
+                <xs:element name="Tel" type="TTel"/>
+            </xs:sequence>                
+        </xs:extension>
+    </xs:complexContent>
+</xs:complexType>
+-->
+
+<xs:complexType name="TMesure">
+    <xs:attribute name="Mesure" type="xs:int" use="required"/>
+    <xs:attribute name="Unite" use="required">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="cm"/>
+                <xs:enumeration value="kg"/>
+                <xs:enumeration value="g"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="TTransporteur">
+    <xs:attribute name="Code" type="xs:unsignedInt" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="TDimensions">
+    <xs:sequence>
+        <xs:element name="Hauteur" type="TMesure"/>
+        <xs:element name="Largeur" type="TMesure"/>
+        <xs:element name="Longueur" type="TMesure"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:attribute name="Type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Rapide"/>
+                <xs:enumeration value="Economique"/>
+            </xs:restriction>
+        </xs:simpleType>
+</xs:attribute>
+
+<xs:attribute name="Indication">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Fragile"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+
+<xs:complexType name="TColis" mixed="true">
+    <xs:sequence>
+        <xs:element name="Poids" type="TMesure"/>
+        <xs:element name="Dimensions" type="TDimensions"/>
+    </xs:sequence>
+    <xs:attribute ref="Indication"/>
+    
+</xs:complexType>
+
+<xs:complexType name="TLivraison">
+    <xs:sequence>
+        <xs:element name="Colis" type="TColis" maxOccurs="unbounded"/>
+        <xs:element name="Expediteur" type="TClient"/>
+        <xs:element name="Destinataire" type="TClient"/>
+        <xs:element name="Transporteur" type="TTransporteur"/>
+    </xs:sequence>
+    <xs:attribute name="Num" type="xs:unsignedByte" use="required"/>
+    <xs:attribute ref="Type"/>
+</xs:complexType>
+
+<xs:group name="GLivraison">
+        <xs:sequence>
+            <xs:element name="Livraison" type="TLivraison"/>
+        </xs:sequence>
+</xs:group>
+
+    <xs:complexType name="TLivraisons">
+       <xs:group ref="GLivraison" maxOccurs="unbounded"/>
+    </xs:complexType>
+
+    <xs:element name="Livraisons" type="TLivraisons"/>
+</xs:schema>

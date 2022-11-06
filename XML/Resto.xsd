@@ -76,13 +76,14 @@
         </xs:sequence>
         <xs:attribute name="Categorie" type="xs:string"/>
     </xs:complexType>
+
     <xs:group name="GResto">
         <xs:sequence>
             <xs:element name="Resto" type="TResto"/>
         </xs:sequence>
     </xs:group>
     <xs:complexType name="TRestaurents">
-       <xs:group ref="GResto" maxOccurs="10"/>
+       <xs:group ref="GResto" maxOccurs="unbounded"/>
     </xs:complexType>
 
     <xs:element name="Restaurents" type="TRestaurents"/>

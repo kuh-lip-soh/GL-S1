@@ -1,0 +1,71 @@
+<?xml-model href="Livraison.xsd"?>
+<Livraisons>
+  <Livraison Num="00" Type="Rapide">
+     <Colis Indication="Fragile"> une description textuelle du colis peut être mentionnée
+       <Poids  Mesure="500" Unite="g"/>
+       <Dimensions>
+        <Hauteur  Mesure="20" Unite="cm"/>
+        <Largeur Mesure="50" Unite="cm"/>
+        <Longueur Mesure="60" Unite="cm"/>
+      </Dimensions>
+   </Colis>
+   <Expediteur>
+    <Nom> nom de l’expediteur </Nom>
+    <Prenom> nom de l’expediteur </Prenom>
+    <Tel>021 45 46 88 </Tel>
+   <Adresse>
+        <Rue> Rue </Rue>
+        <Ville> 1600 </Ville>
+        <Pays> Algérie </Pays>
+   </Adresse>
+  </Expediteur>
+   <Destinataire>
+        <Nom> nom de destinataire </Nom>
+        <Prenom> nom de destinataire </Prenom>
+        <Adresse>
+            <Rue> Rue </Rue>
+            <Ville> Tlemcen </Ville>
+            <Pays> Algérie </Pays>
+         </Adresse>
+  </Destinataire>
+   <Transporteur Code="002"/>
+</Livraison>
+
+<Livraison Num="0002" Type="Economique">
+     <Colis> une description textuelle du colis peut être mentionnée
+         <Poids  Mesure="9" Unite="kg"/>
+         <Dimensions>
+            <Hauteur  Mesure="70" Unite="cm"/>
+            <Largeur Mesure="500" Unite="cm"/>
+            <Longueur Mesure="200" Unite="cm"/>
+         </Dimensions>
+   </Colis>
+   <Colis> une description textuelle du colis peut être mentionnée
+         <Poids  Mesure="5" Unite="kg"/>
+      <Dimensions>
+       <Hauteur  Mesure="20" Unite="cm"/>
+        <Largeur Mesure="100" Unite="cm"/>
+        <Longueur Mesure="150" Unite="cm"/>
+       </Dimensions>
+   </Colis>
+   <Expediteur>
+        <Prenom> nom de l’expediteur </Prenom>    
+        <Nom> nom de l’expediteur </Nom>
+        <Tel> 043 45 46 88 </Tel>
+        <Adresse>
+               mail@google.com
+       </Adresse>
+   </Expediteur>
+   <Destinataire>
+      <Prenom> nom de destinataire </Prenom>
+      <Nom> nom de destinataire </Nom>
+      <Adresse>
+            <Rue> Rue </Rue>
+            <Ville> 1600 </Ville>
+            <Pays> Algérie </Pays>
+       </Adresse>
+   </Destinataire>
+   <Transporteur Code="005"/>
+</Livraison>
+
+</Livraisons>
