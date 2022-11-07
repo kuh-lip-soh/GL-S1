@@ -1,6 +1,5 @@
 <?php
 
-
 function moyenne($notes)
 {
 $moy=0;
