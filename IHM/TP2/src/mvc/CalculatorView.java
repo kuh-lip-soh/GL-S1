@@ -19,11 +19,12 @@ import javax.swing.*;
 
 public class CalculatorView extends JFrame{
 
-	private JTextField firstNumber  = new JTextField(10);
+	private JTextField firstNumber  = new JTextField("0",10);
 	private JTextField operation = new JTextField(2);
-	private JTextField secondNumber = new JTextField(10);
+	private JTextField secondNumber = new JTextField("0",10);
 	private JButton calculateButton = new JButton("Calculate");
 	private JTextField calcSolution = new JTextField(20);
+
 	
 	CalculatorView(){
 		

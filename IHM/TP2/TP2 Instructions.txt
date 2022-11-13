@@ -6,14 +6,12 @@ Opérations a 2 variables :
 * multiplication
 / division (avec exception /0)
 
-Opérations a 1 variable :
+Opérations a 1 variable (celle de gauche):
 e exponentielle
 p exposant
 ! factoriel
 m modulo
 l logarithme népérien
-
-Opérations géometriques (a 1 variable) :
 s sinus
 c cosinus
 t tangente
