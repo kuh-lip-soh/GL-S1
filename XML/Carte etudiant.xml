@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- New document created with EditiX at Sun Oct 02 09:17:02 GMT+01:00 2022 -->
-
 <?xml-stylesheet type="text/xsl" href="Carte etudiant.xsl"?>
 <?xml-model href="Carte etudiant.xsd"?>
+
 <Etudiants>
 	<Etudiant>
 		<Carte>
@@ -20,6 +18,11 @@
 				</Lieu>
 			</Naissance>
 			<Filliere> MI
+				<Specialite> Informatique </Specialite>
+				<Moyenne>12</Moyenne>
+				<Note>12</Note>
+				<Note>8</Note>
+				<Note>16</Note>
 </Filliere>
 			<AnneeUniversitaire> 2017/2018
 </AnneeUniversitaire>
@@ -40,6 +43,36 @@
 	</Lieu>
 			</Naissance>
 			<Filliere> MI
+				<Specialite> Informatique </Specialite>
+				<Moyenne>9</Moyenne>
+				<Note>12</Note>
+				<Note>8</Note>
+				<Note>7</Note>
+</Filliere>
+			<AnneeUniversitaire> 2018/2019
+</AnneeUniversitaire>
+		</Carte>
+	</Etudiant>
+	<Etudiant>
+		<Carte>
+			<NumeroCarte> 181837012563
+</NumeroCarte>
+			<Nom> MEZIANI
+</Nom>
+			<Prenom> Chaima
+</Prenom>
+			<Naissance>
+				<Date>2000-06-15
+	</Date>
+				<Lieu>Tlemcen
+	</Lieu>
+			</Naissance>
+			<Filliere> MI
+				<Specialite> Informatique </Specialite>
+				<Moyenne>14</Moyenne>
+				<Note>15</Note>
+				<Note>10</Note>
+				<Note>7</Note>
 </Filliere>
 			<AnneeUniversitaire> 2018/2019
 </AnneeUniversitaire>
