@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Calculatrice.xsl"?>
+
+<Calculatrice>
+	<Calcul>
+		<Operation>+</Operation>
+		<Valeurs>
+						<Valeur Val="19"/>
+						<Valeur Val="3"/>
+		</Valeurs>
+	</Calcul>
+	<Calcul>
+		<Operation>-</Operation>
+		<Valeurs>
+					<Valeur Val="13"/>
+					<Valeur Val="2"/>
+		</Valeurs>
+	</Calcul>
+	<Calcul>
+		<Operation>*</Operation>
+		<Valeurs>
+					<Valeur Val="8"/>
+					<Valeur Val="4"/>
+		</Valeurs>
+	</Calcul>
+	<Calcul>
+		<Operation>/</Operation>
+		<Valeurs>
+					<Valeur Val="10"/>
+					<Valeur Val="0"/>
+		</Valeurs>
+	</Calcul>
+
+</Calculatrice>

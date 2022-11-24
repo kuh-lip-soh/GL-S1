@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Calculatrice.xsl"?>
+
+<Calculatrice>
+    <Calcul operation="+">
+        <Valeur>16</Valeur>
+        <Valeur>13</Valeur>
+    </Calcul>
+    <Calcul operation="-">
+        <Valeur>15</Valeur>
+        <Valeur>10</Valeur>
+    </Calcul>
+</Calculatrice>

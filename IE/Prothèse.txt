@@ -1,0 +1,9 @@
+Prothèse de main :
+
+Éxigences fonctionnelles :
+-Gestion des mouvements -> Gestion de la force des mouvements -> Port de poids lourds
+-Gestion du toucher -> Retours haptiques intelligents
+
+Éxigences non-fonctionnelles :
+-Étancheité
+-Poids leger
