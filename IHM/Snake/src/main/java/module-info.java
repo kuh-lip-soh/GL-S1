@@ -1,8 +1,8 @@
-module com.example.snake {
+module com.example.tpsnake {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.snake to javafx.fxml;
-    exports com.example.snake;
+    opens com.example.tpsnake to javafx.fxml;
+    exports com.example.tpsnake;
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="38.0" layoutY="18.0" text="FLOUFLIX" textFill="RED">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField layoutX="161.0" layoutY="19.0" prefHeight="25.0" prefWidth="280.0" promptText="Rechercher" />
+        <Button layoutX="483.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Films" textFill="WHITE" />
+        <Button layoutX="553.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Series" textFill="WHITE" />
+        <Button layoutX="627.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Anime" textFill="WHITE" />
+    </children>
+</Pane>

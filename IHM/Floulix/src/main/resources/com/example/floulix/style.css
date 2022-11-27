@@ -1,0 +1,69 @@
+.bcs {
+    -fx-background-image: url("bcs.png");
+    -fx-background-size: 70%, 70%;
+}
+
+.d1899 {
+    -fx-background-image: url("1899.png");
+    -fx-background-size: 100%, 100%;
+}
+
+.dark {
+    -fx-background-image: url("dark.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.death {
+    -fx-background-image: url("death note.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.bleach {
+    -fx-background-image: url("bleach.png");
+    -fx-background-size: 100%, 100%;
+}
+
+.erased {
+    -fx-background-image: url("erased.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.fire {
+    -fx-background-image: url("fire force.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.hxh {
+    -fx-background-image: url("hxh.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.mia {
+    -fx-background-image: url("made in abyss.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.mushoku {
+    -fx-background-image: url("mushoku.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.opm {
+    -fx-background-image: url("opm.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.vinland {
+    -fx-background-image: url("vinland.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.andor {
+    -fx-background-image: url("andor.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.mando {
+    -fx-background-image: url("mando.png");
+    -fx-background-size: 100%, 100%;
+}
