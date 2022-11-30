@@ -36,6 +36,14 @@ public class snakeEX extends Circle{
         }
         return false;
     }
+
+    public boolean border() {
+            if(this.getCenterX()<0 || this.getCenterX()>800)
+                return true;
+            if(this.getCenterY()<0 || this.getCenterY()>600)
+                return true;
+            return false;
+    }
     private Circle end(){
         if(l==0)
             return this;

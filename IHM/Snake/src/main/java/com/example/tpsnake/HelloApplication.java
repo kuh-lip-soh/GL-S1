@@ -51,7 +51,7 @@ public void move(){
     {
         root.getChildren().clear();
         root.getChildren().add(score);
-        score.setText("Game over "+ snake.getlength());
+        score.setText("Game over, your score is "+ snake.getlength());
         generateSnake();
         generateFood();
     }
@@ -59,7 +59,7 @@ public void move(){
     });
 }
 private boolean gameover(){
-        return snake.eatself();
+        return snake.eatself() || snake.border();
 }
     @Override
     public void start(Stage stage) throws IOException {
@@ -97,7 +97,7 @@ private boolean gameover(){
 
 
         });
-        stage.setTitle("Hello!");
+        stage.setTitle("Solid Snake");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

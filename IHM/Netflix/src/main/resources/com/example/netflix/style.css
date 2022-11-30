@@ -1,0 +1,47 @@
+.parasite {
+    -fx-background-image: url("parasite.jpg");
+    -fx-background-size: 72%, 72%;
+}
+
+
+.death {
+    -fx-background-image: url("death.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+
+.erased {
+    -fx-background-image: url("erased.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.fire {
+    -fx-background-image: url("fire.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.hxh {
+    -fx-background-image: url("hxh.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.mia {
+    -fx-background-image: url("mia.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+
+.vinland {
+    -fx-background-image: url("vinland.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.yourname {
+    -fx-background-image: url("yourname.jpg");
+    -fx-background-size: 100%, 100%;
+}
+
+.banner {
+    -fx-background-image: url("banner.jpg");
+    -fx-background-size: 100%, 100%;
+}
