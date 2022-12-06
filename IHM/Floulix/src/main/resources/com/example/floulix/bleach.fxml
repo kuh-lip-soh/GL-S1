@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.floulix.HelloController">
+    <children>
+      <Pane layoutY="-3.0" prefHeight="487.0" prefWidth="854.0" styleClass="tybw" stylesheets="@style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="44.0" layoutY="305.0" prefHeight="30.0" prefWidth="200.0" text="Episodes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Pane layoutX="20.0" layoutY="343.0" prefHeight="217.0" prefWidth="815.0">
+               <children>
+                  <VBox layoutX="28.0" prefHeight="217.0" prefWidth="280.0">
+                     <children>
+                        <HBox prefHeight="34.0" prefWidth="380.0">
+                           <children>
+                               <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Épisode 1">
+                                   <font>
+                                       <Font name="System Bold" size="12.0" />
+                                   </font>
+                               </Button>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="101.0" text="Titre épisode">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children></HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="380.0">
+                           <children>
+                              <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Épisode 2">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="101.0" text="Titre épisode">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="44.0" prefHeight="34.0" prefWidth="380.0">
+                           <children>
+                              <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Épisode 3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="101.0" text="Titre épisode">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="78.0" prefHeight="34.0" prefWidth="380.0">
+                           <children>
+                              <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Épisode 4">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="101.0" text="Titre épisode">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="44.0" prefHeight="34.0" prefWidth="380.0">
+                           <children>
+                              <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Épisode 5">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="101.0" text="Titre épisode">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="408.0" prefHeight="217.0" prefWidth="359.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="358.0" text="Réalisateur : Noriyuki Abe" textFill="WHITE" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString=".." layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="358.0" text="Scénariste : Masashi Sogo" textFill="WHITE" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString=".." layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="358.0" text="Studio : Dentsu Inc., Shūeisha" textFill="WHITE" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString=".." layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="358.0" text="Année de diffusion : 2004" textFill="WHITE" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString=".." layoutX="10.0" layoutY="67.0" prefHeight="20.0" prefWidth="358.0" text="Durée moyenne : 22 minutes" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="508.0" layoutY="305.0" prefHeight="30.0" prefWidth="200.0" text="Informations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children></Pane>
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="854.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <Label layoutX="38.0" layoutY="18.0" text="FLOUFLIX" textFill="RED">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
         </Label>
+            <Button layoutX="38.0" layoutY="16.0" mnemonicParsing="false" onAction="#switchHome" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: transparent;" />
         <TextField layoutX="161.0" layoutY="19.0" prefHeight="25.0" prefWidth="280.0" promptText="Rechercher" />
         <Button layoutX="483.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Films" textFill="WHITE" />
         <Button layoutX="553.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Series" textFill="WHITE" />
         <Button layoutX="627.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Anime" textFill="WHITE" />
     </children>
-</Pane>
+    </Pane>
+    </children>
+</AnchorPane>
