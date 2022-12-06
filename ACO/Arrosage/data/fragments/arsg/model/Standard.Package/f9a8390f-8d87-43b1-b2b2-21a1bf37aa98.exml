@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="arsg" version="4">
+  <OBJECT>
+    <ID name="arsg" mc="Standard.Package" uid="f9a8390f-8d87-43b1-b2b2-21a1bf37aa98"/>
+    <PID name="arsg" mc="Standard.Project" uid="80be98e2-77e9-4d3b-8e7f-e0495d1a0f0e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[arsg]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ouvrir rbn" mc="Standard.UseCase" uid="f385800c-4d61-4287-ba44-f0bef7d875ed"/>
+        <COMPID name="fermer rbn" mc="Standard.UseCase" uid="03f8c6eb-8fdc-421c-9bfe-0f39c1e38a63"/>
+        <COMPID name="prop" mc="Standard.Actor" uid="36a6f9ba-4783-4b55-ab5b-1c77890fe6d3"/>
+        <COMPID name="detecteur" mc="Standard.UseCase" uid="c68535ee-78b3-4c1c-9745-8b68177f39c1"/>
+        <COMPID name="syst" mc="Standard.Actor" uid="bad2652d-6dc4-4b79-bc57-99daaea71dd0"/>
+        <COMPID name="comand ad" mc="Standard.UseCase" uid="2addd72d-2f66-47d5-bb0c-10f08fa6b912"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation arsg" mc="Standard.UseCaseDiagram" uid="22a545cc-4e08-47af-b946-7c44b9fe1c7b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="lum" version="4">
+  <OBJECT>
+    <ID name="lum" mc="Infrastructure.DiagramSet" uid="f584b6c9-cd58-4fdc-8563-2aba36b7efa7"/>
+    <PID name="lum" mc="Standard.Project" uid="cc80fc67-1d07-47e6-892e-d570b5cfbc28"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[lum]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

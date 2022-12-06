@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="smarthome" version="4">
+  <OBJECT>
+    <ID name="smarthome" mc="Standard.Package" uid="6838911a-91e8-4e10-9d1e-7dafd0d42ff5"/>
+    <PID name="SmartHome" mc="Standard.Project" uid="19c00888-0929-4188-96e2-7de38436b32f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[smarthome]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Admin" mc="Standard.Actor" uid="554af707-9b7c-40fd-b10f-653162ebf3ed"/>
+        <COMPID name="Utilisateur" mc="Standard.Actor" uid="a65d4d2a-e8e0-4b86-be49-75742dc2a5d5"/>
+        <COMPID name="Detecter le mouvement" mc="Standard.UseCase" uid="3d74be40-ec50-416a-b9f1-97255b8147cf"/>
+        <COMPID name="Allumer la lumière" mc="Standard.UseCase" uid="9a3d29b8-8c28-455a-b246-2e8e49dce5df"/>
+        <COMPID name="Eteindre la lumière" mc="Standard.UseCase" uid="77360d2d-5568-4091-9b75-c195c67e0fc9"/>
+        <COMPID name="Donner un ordre vocal" mc="Standard.UseCase" uid="bb951e52-22c0-4f4b-b53e-be5217e4590d"/>
+        <COMPID name="Detecter la luminosité" mc="Standard.UseCase" uid="26ea8e47-ec6e-4f29-8d8e-5845148c1a24"/>
+        <COMPID name="Mettre un éclairage d'ambiance" mc="Standard.UseCase" uid="be97374f-637b-4f53-a459-802801cf3137"/>
+        <COMPID name="Commander a distance" mc="Standard.UseCase" uid="adf4a5f3-3257-422a-bd97-2ce83b5dae1f"/>
+        <COMPID name="Authentifier" mc="Standard.UseCase" uid="5d507d4b-6161-4057-9c2c-83f8ef617d4a"/>
+        <COMPID name="Acceder a l'habitat" mc="Standard.UseCase" uid="57f40771-4847-48f3-876e-e524b231cbbd"/>
+        <COMPID name="Restreindre l'acces au bureau" mc="Standard.UseCase" uid="a49723f1-2a4a-43d0-88e4-e36e5042fcf5"/>
+        <COMPID name="Controler la climatisation" mc="Standard.UseCase" uid="c5dd48b6-faa6-45f8-ae5c-1f62f4135f31"/>
+        <COMPID name="Manuellement" mc="Standard.UseCase" uid="894847dc-8c44-4468-ac0e-4c6644a85284"/>
+        <COMPID name="Sytème" mc="Standard.Actor" uid="2e345ee6-0176-47b3-b74c-df42c64c3d5e"/>
+        <COMPID name="Maintenir la température" mc="Standard.UseCase" uid="dc35a408-fff5-45ed-8094-40be67e58c5a"/>
+        <COMPID name="Automatiser la climatisation" mc="Standard.UseCase" uid="e0855d76-f09b-4de4-9568-06f3fbfc380f"/>
+        <COMPID name="Ouvrir la fenêtre" mc="Standard.UseCase" uid="3f58a2c2-cee0-4412-967e-e83dca1f3864"/>
+        <COMPID name="Fermer la fenêtre" mc="Standard.UseCase" uid="8fbaf849-b7d5-4273-938d-744b42a0e936"/>
+        <COMPID name="Automatiser l'aération" mc="Standard.UseCase" uid="27a5d4df-a11d-4bb1-870a-c1f318f561a4"/>
+        <COMPID name="Detecter le feu" mc="Standard.UseCase" uid="b60b1cc7-deb0-454c-9507-3833f7fd8de5"/>
+        <COMPID name="Detecter les gaz" mc="Standard.UseCase" uid="f8beef40-e500-47cb-aa67-4afe45fe4ee8"/>
+        <COMPID name="Sonner une alarme" mc="Standard.UseCase" uid="121ed3c7-c27b-494b-8795-d9f33c21a1fc"/>
+        <COMPID name="Eteindre l'alarme" mc="Standard.UseCase" uid="52abea45-0db0-4529-9f12-77c795799690"/>
+        <COMPID name="Acceder aux caméras" mc="Standard.UseCase" uid="b455c52b-265d-426f-b44a-830b7405f91e"/>
+        <COMPID name="Enregistrer" mc="Standard.UseCase" uid="19d4ee60-d6b5-4a88-8230-3214ce433f09"/>
+        <COMPID name="Remplir la piscine" mc="Standard.UseCase" uid="7020e03f-3b59-48a8-9109-bcfee674528d"/>
+        <COMPID name="Vider la piscine" mc="Standard.UseCase" uid="ef4d2148-3768-467b-8ba1-03a64b42d1ad"/>
+        <COMPID name="Maintenir le niveau d'eau" mc="Standard.UseCase" uid="6a4936c7-fb75-4548-b2a4-960403f4b0f1"/>
+        <COMPID name="Scanner d'empreinte" mc="Standard.UseCase" uid="07a4fc6a-e539-4faa-82bf-5e9593bba247"/>
+        <COMPID name="Scanner d'iris" mc="Standard.UseCase" uid="98eaa1fa-3b7d-4386-b149-8228cc4492e9"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation smarthome" mc="Standard.UseCaseDiagram" uid="cc6d92a1-474c-486a-8ab9-016f7ab2c852"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
