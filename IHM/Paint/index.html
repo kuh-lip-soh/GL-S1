@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Editeur de dessin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/paint.js"></script>
+	<link href="css/paint.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="page">
+    <div class="header">
+		<a id="new" class="navbtn">Clear</a>
+		<button class="navtbn" onclick="drawrect()">Rectangle</button>
+    </div>
+    <div id="content"><p style="text-align:center">Loading Canvas...</p></div>
+    <div class="footer">
+		<div class="palette-case">
+			<div class="palette-box">
+				<div class="palette white" id="color"></div>
+			</div>	
+			<div class="palette-box">
+				<div class="palette pink"></div>
+			</div>
+			<div class="palette-box">
+				<div class="palette red"></div>
+			</div>
+			<div class="palette-box">
+				<div class="palette yellow"></div>
+			</div>
+			<div class="palette-box">
+				<div class="palette blue"></div>
+			</div>
+			<div class="palette-box">
+				<div class="palette cyan"></div>
+			</div>
+			<div class="palette-box">
+				<div class="palette green"></div>
+			</div>
+			<div class="palette-box">
+				<div class="palette black"></div>
+			</div>		
+			
+		</div>
+    </div>
+</div> 
+</body>
+</html>

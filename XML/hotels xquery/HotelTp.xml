@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<hotels pays="Algerie">
+<titre> Ville Tlemcen </titre>
+<hotel  nbrEtoile="4"> 
+<Nom> Nom du premier hôtel</Nom>
+<Adresse code="16000"> adresse postale de l'hôtel</Adresse>
+<chambres>
+<chambre type="simple"> nombre de chambres </chambre>
+<chambre type="double"> nombre de chambres </chambre>
+</chambres>
+<photos> Photos actuelles de l'hôtel </photos>
+</hotel>
+<hotel  nbrEtoile="5"> 
+<Nom> Nom du deuxième hôtel</Nom>
+<Adresse code="13000"> adresse postale de l'hôtel</Adresse>
+<chambres>
+<chambre type="simple"> nombre de chambres </chambre>
+<chambre type="double"> nombre de chambres </chambre>
+</chambres>
+<photos> Photos actuelles de l'hôtel </photos>
+</hotel>
+<hotel  nbrEtoile="3"> 
+<Nom> Nom du troisième hôtel</Nom>
+<Adresse code="13000"> adresse postale de l'hôtel</Adresse>
+<chambres>
+<chambre type="simple"> nombre de chambres </chambre>
+<chambre type="double"> nombre de chambres </chambre>
+</chambres>
+<photos> Photos actuelles de l'hôtel </photos>
+</hotel>
+</hotels>

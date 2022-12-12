@@ -1,0 +1,1 @@
+delete node doc("HotelTp.xml")/hotels/hotel[1]
