@@ -1,0 +1,1 @@
+Il faut clear pour que les autres formes marchent correctement

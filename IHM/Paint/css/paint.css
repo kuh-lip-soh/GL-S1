@@ -4,14 +4,11 @@ body {
     height:100%;
     overflow:hidden;
     font-family:Arial;
-    /* prevent text selection on ui */
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    /* prevent scrolling in windows phone */
     -ms-touch-action: none;
-    /* prevent selection highlight */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
         
@@ -57,11 +54,51 @@ body {
     background-color: #404040;
     box-shadow: 0 0 1px 1px #555,inset 0 1px 0 0 #666;     
 }
+
 .navbtn-hover, .navbtn:active {
     color: #222;
     text-shadow: 0px 1px #aaa;
     background-color: #aaa;
     box-shadow: 0 0 1px 1px #444,inset 0 1px 0 0 #ccc;   
+}
+
+.shapesbtn{
+    cursor: pointer;
+    padding: 6px 10px;
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 14px;
+    color: #eee;
+    text-shadow: 0px -1px #000;
+    border: solid 1px #111;
+    border-radius: 4px;
+    background-color: #404040;
+    box-shadow: 0 0 1px 1px #555,inset 0 1px 0 0 #666;     
+}
+
+.shapesbtn-hover, .shapesbtn:active{
+    color: #222;
+    text-shadow: 0px 1px #aaa;
+    background-color: #aaa;
+    box-shadow: 0 0 1px 1px #444,inset 0 1px 0 0 #ccc;   
+}
+
+.width{
+    cursor: pointer;
+    padding: 6px 20px;
+    font-weight: bold;
+    line-height: 10px;
+    font-size: 6px;
+    color: #eee;
+    text-shadow: 0px -1px #000;
+    border: solid 1px #111;
+    border-radius: 1px;
+    background-color: #404040;
+    box-shadow: 0 0 1px 1px #555,inset 0 1px 0 0 #666;  
+}
+
+.shapesbtn, .width{
+    display: inline-block;
 }
 
 #content{
@@ -99,6 +136,9 @@ body {
 }
 .yellow{
     background-color:rgb(221, 224, 18);
+}
+.orange{
+    background-color:rgb(116, 68, 6);
 }
 .blue{
     background-color:#22c;

@@ -23,9 +23,31 @@ $(document).ready(function () {
 		newCanvas();
 	});
 
-	$("#rect").click(function (){
+	$("#save").click(function() {
+		saveImg();
+	});
+	
+
+	$("#brush").click(function(){
+		ctx=document.getElementById("canvas").getContext("2d");
+		$("#canvas").drawMouse();
+	});
+
+	$("#line").click(function(){
+		ctx=document.getElementById("canvas").getContext("2d");
+		$("#canvas").drawLine();
+	});
+
+	$("#rect").click(function(){
+		ctx=document.getElementById("canvas").getContext("2d");
 		$("#canvas").drawRect();
-	});	
+	});
+
+	$("#circ").click(function(){
+		ctx=document.getElementById("canvas").getContext("2d");
+		$("#canvas").drawCirc();
+	});
+	
 });
 
 
@@ -35,20 +57,27 @@ function newCanvas(){
     var canvas = '<canvas id="canvas" width="'+$(window).width()+'" height="'+($(window).height()-90)+'"></canvas>';
 	$("#content").html(canvas);
     
-    // setup canvas
 	ctx=document.getElementById("canvas").getContext("2d");
 	ctx.strokeStyle = color;
-	ctx.lineWidth = 5;	
-	
+	ctx.lineWidth = 4;
+}
 
-	$("#canvas").drawMouse();
+function updateWidth(){
+	ctx = document.getElementById("canvas").getContext("2d");
+	ctx.lineWidth = Math.round(document.getElementById("width").value);
+}
+
+function saveImg(){
+	var ctx=document.querySelector("#canvas");
+	var img = ctx.toDataURL("image/png",1.0);
+	var a = document.createElement('a');
+    a.href = img;
+    a.download = "canvas.png";
+    document.body.appendChild(a);
+    a.click();
 }
 
 
-    
-      
-
-// Dessiner les lignes avec moveTo et lineTo
 $.fn.drawMouse = function() {
 	var clicked = 0;
 	var start = function(e) {
@@ -74,65 +103,88 @@ $.fn.drawMouse = function() {
 	$(window).on("mouseup", stop);
 };
 
-function drawRect() {
-    const canvas = document.querySelector('#canvas');
-
-    if (!canvas.getContext) {
-        return;
-    }
-    const ctx = canvas.getContext('2d');
-
-    // set line stroke and line width
-    ctx.strokeStyle = document.getElementById("color").style.backgroundColor;
-    ctx.lineWidth = 5;
-	
-
-    // draw a red line
-    ctx.beginPath();
-    ctx.rect(100,100,20,20);
-    ctx.stroke();
-
-}
-
-function drawrect() {
-    const canvas = document.querySelector('#canvas');
-
-    if (!canvas.getContext) {
-        return;
-    }
-    const ctx = canvas.getContext('2d');
-
-    // set line stroke and line width
-    ctx.strokeStyle = document.getElementById("color").style.backgroundColor;
-    ctx.lineWidth = 3;
-	
-
-    // draw a red line
-    ctx.beginPath();
-    ctx.rect(100,100,120,350);
-    ctx.stroke();
-
-}
-/*
-drawRect = function () {
+$.fn.drawLine = function() {
 	var clicked = 0;
-	var x, y;
-	var start = function(e){
+	var start = function(e) {
 		clicked = 1;
 		ctx.beginPath();
 		x = e.pageX;
 		y = e.pageY-44;
-		ctx.moveTo(x1,y1);
-	}
-	
+		ctx.moveTo(x,y);
+	};
 	var stop = function(e) {
-		if(clicked)
-		x2=e.pageX;
-		y2=e.pageY-44;
-		ctx.rect(x,y,x1,y1);
-	}
+		if(clicked){
+		x = e.pageX;
+		y = e.pageY-44;
+		ctx.lineTo(x,y);
+		ctx.stroke();
+		}
+		clicked = 0;
+	};
 
 	$(this).on("mousedown", start);
 	$(window).on("mouseup", stop);
 }
-*/
+
+$.fn.drawRect = function() {
+	var clicked = 0;
+	x1 = 0; y1 = 0;
+	var start = function(e) {
+		clicked = 1;
+		ctx.beginPath();
+		x = e.pageX;
+		y = e.pageY-44;
+		[x1,y1]=[x,y];
+		ctx.moveTo(x,y);
+	};
+	var stop = function(e) {
+		if(clicked){
+		x = e.pageX;
+		y = e.pageY-44;
+		if(x<x1)
+			[x,x1] = [x1,x];
+		if(y<y1)
+			[y,y1] = [y1,y];
+		x-=x1;
+		y-=y1;
+		ctx.rect(x1,y1,x,y);
+		ctx.stroke();
+		}
+		clicked = 0;
+	};
+
+	$(this).on("mousedown", start);
+	$(window).on("mouseup", stop);
+}
+
+$.fn.drawCirc = function() {
+	var clicked = 0;
+	x1 = 0; y1 = 0;
+	var start = function(e) {
+		clicked = 1;
+		ctx.beginPath();
+		x = e.pageX;
+		y = e.pageY-44;
+		x1=x;
+		y1=y;
+	};
+	var stop = function(e) {
+		if(clicked){
+		x = e.pageX;
+		y = e.pageY-44;
+		if(x<x1)
+			[x,x1] = [x1,x];
+		if(y<y1)
+			[y,y1] = [y1,y];
+		r=((x-x1)+(y-y1))/4;
+		x1=(x1+x)/2;
+		y1=(y1+y)/2;
+		ctx.arc(x1,y1,r,0,2*Math.PI,false);
+		ctx.stroke();
+		}
+		clicked = 0;
+	};
+
+	$(this).on("mousedown", start);
+	$(window).on("mouseup", stop);
+}
