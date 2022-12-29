@@ -52,7 +52,22 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Manuellement" mc="Standard.UseCase" uid="894847dc-8c44-4468-ac0e-4c6644a85284"/>
+              <ID name="Controller manuellement" mc="Standard.UseCase" uid="894847dc-8c44-4468-ac0e-4c6644a85284"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="e7afda36-fd18-4743-8a4a-da292dc41253"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Authentifier" mc="Standard.UseCase" uid="5d507d4b-6161-4057-9c2c-83f8ef617d4a"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
