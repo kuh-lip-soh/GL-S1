@@ -15,7 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="Used">
         <OBJECT>
-          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="1ba5555a-28f3-4e31-80ac-976d768f9552"/>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="e77aadf6-0ca8-4972-9037-d2cc1f87a3c9"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -25,7 +25,7 @@
               <ID name="Sonner une alarme" mc="Standard.UseCase" uid="121ed3c7-c27b-494b-8795-d9f33c21a1fc"/>
             </LINK>
             <LINK relation="Extension">
-              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+              <FOREIGNID name="extend" mc="Infrastructure.Stereotype" uid="00000000-0000-9c48-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
