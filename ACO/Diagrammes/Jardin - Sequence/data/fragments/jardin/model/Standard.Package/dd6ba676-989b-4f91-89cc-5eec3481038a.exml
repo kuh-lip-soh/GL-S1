@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="jardin" version="4">
+  <OBJECT>
+    <ID name="jardin" mc="Standard.Package" uid="dd6ba676-989b-4f91-89cc-5eec3481038a"/>
+    <PID name="jardin" mc="Standard.Project" uid="6cbf8f9a-afb7-4260-b147-e1e113e20ea0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[jardin]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="0f005300-c9f2-474d-b035-24f686617cc0"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

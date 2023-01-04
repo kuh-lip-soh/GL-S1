@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="lumiere" version="4">
+  <OBJECT>
+    <ID name="lumiere" mc="Standard.Package" uid="85e33b51-3700-4f5b-a3eb-882866d7b8ce"/>
+    <PID name="lumiere" mc="Standard.Project" uid="e0ede368-9cb4-4e39-b0b1-51a430416425"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[lumiere]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="e679eb08-c7da-40f5-a4f2-f1878339248c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

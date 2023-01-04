@@ -1,0 +1,6 @@
+#Wed Jan 04 19:29:54 WAT 2023
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/hp%20tonton%20phone/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.app.diagram.editor.OpenedDiagrams0='Diagramme de s\u00E9quence Interaction' {f978da1a-3c88-43ab-ac74-024e5725a397} Standard.SequenceDiagram
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/hp%20tonton%20phone/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/hp%20tonton%20phone/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/hp%20tonton%20phone/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom

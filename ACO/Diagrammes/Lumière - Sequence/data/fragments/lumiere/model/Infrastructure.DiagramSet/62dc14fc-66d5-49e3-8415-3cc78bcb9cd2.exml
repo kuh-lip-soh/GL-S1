@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="lumiere" version="4">
+  <OBJECT>
+    <ID name="lumiere" mc="Infrastructure.DiagramSet" uid="62dc14fc-66d5-49e3-8415-3cc78bcb9cd2"/>
+    <PID name="lumiere" mc="Standard.Project" uid="e0ede368-9cb4-4e39-b0b1-51a430416425"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[lumiere]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

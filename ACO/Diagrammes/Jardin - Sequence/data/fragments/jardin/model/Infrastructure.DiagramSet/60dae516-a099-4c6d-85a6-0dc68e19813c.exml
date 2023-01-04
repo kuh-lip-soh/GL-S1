@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="jardin" version="4">
+  <OBJECT>
+    <ID name="jardin" mc="Infrastructure.DiagramSet" uid="60dae516-a099-4c6d-85a6-0dc68e19813c"/>
+    <PID name="jardin" mc="Standard.Project" uid="6cbf8f9a-afb7-4260-b147-e1e113e20ea0"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[jardin]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

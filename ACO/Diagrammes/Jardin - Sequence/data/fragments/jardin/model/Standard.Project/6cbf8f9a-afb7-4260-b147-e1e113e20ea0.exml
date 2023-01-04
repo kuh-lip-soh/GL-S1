@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="jardin" version="4">
+  <OBJECT>
+    <ID name="jardin" mc="Standard.Project" uid="6cbf8f9a-afb7-4260-b147-e1e113e20ea0"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[jardin]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="jardin" mc="Standard.Package" uid="dd6ba676-989b-4f91-89cc-5eec3481038a"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="jardin" mc="Infrastructure.DiagramSet" uid="60dae516-a099-4c6d-85a6-0dc68e19813c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

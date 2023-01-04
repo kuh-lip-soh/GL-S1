@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lumière" version="4">
+  <OBJECT>
+    <ID name="Lumière" mc="Standard.Project" uid="e0ede368-9cb4-4e39-b0b1-51a430416425"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Lumière]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="lumiere" mc="Standard.Package" uid="85e33b51-3700-4f5b-a3eb-882866d7b8ce"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="lumiere" mc="Infrastructure.DiagramSet" uid="62dc14fc-66d5-49e3-8415-3cc78bcb9cd2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

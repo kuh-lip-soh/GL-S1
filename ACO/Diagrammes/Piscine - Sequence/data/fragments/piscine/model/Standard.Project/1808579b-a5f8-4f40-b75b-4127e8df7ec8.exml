@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="piscine" version="4">
+  <OBJECT>
+    <ID name="piscine" mc="Standard.Project" uid="1808579b-a5f8-4f40-b75b-4127e8df7ec8"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[piscine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="piscine" mc="Standard.Package" uid="6b1160ff-bb8f-4357-867d-e238050f6498"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="piscine" mc="Infrastructure.DiagramSet" uid="95f7b878-e0ba-49b8-866e-3ed8c0657d1b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

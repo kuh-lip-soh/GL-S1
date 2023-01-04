@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="seq2 ath" version="4">
+  <OBJECT>
+    <ID name="seq2 ath" mc="Standard.Project" uid="69c29106-2f62-42de-8f17-d0a3680a6952"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[seq2 ath]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="seq2 ath" mc="Standard.Package" uid="2f726221-bca2-4c94-8da2-678ddfc0b3c2"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="seq2 ath" mc="Infrastructure.DiagramSet" uid="c288626e-32a5-4d30-911d-364c19caa507"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
