@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="phone.xsl"?>
+
+<Site>
+    <Phone note="4">
+        <Marque>Samsung</Marque>
+        <Modele>S20</Modele>
+        <Date>10-02-2020</Date>
+        <Vente>10</Vente>
+        <Specs>
+            <Sim double="true"/>
+        </Specs>
+    </Phone>
+    <Phone note="5">
+        <Marque>Google</Marque>
+        <Modele>Pixel 7</Modele>
+        <Date>20-03-2022</Date>
+        <Vente>8</Vente>
+        <Specs>
+            <Sim double="false"/>
+        </Specs>
+    </Phone>
+    <Phone note="5">
+        <Marque>Google</Marque>
+        <Modele>Pixel 6A</Modele>
+        <Date>10-08-2021</Date>
+        <Vente>88</Vente>
+        <Specs>
+            <Sim double="false"/>
+        </Specs>
+    </Phone>
+</Site>

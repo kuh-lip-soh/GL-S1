@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livre titre="Mon livre">
+  <auteurs>
+    <auteur nom="n1" prenom="p1" />
+    <auteur nom="n2" prenom="p2" />
+  </auteurs>
+  <sections>
+    <section titre="S1">
+      <chapitre titre="C1">
+        <paragraphe>prmier paragraphe</paragraphe>
+        <paragraphe>deuxiem paragraphe</paragraphe>
+      </chapitre>
+    </section>
+    <section titre="S2">
+      <chapitre titre="C2">
+        <paragraphe>1 er paragraphe</paragraphe>
+        <paragraphe>2eme paragraphe</paragraphe>
+      </chapitre>
+      <conclusion>Conclusion</conclusion>
+      <perspective />
+    </section>
+  </sections>
+</livre>
