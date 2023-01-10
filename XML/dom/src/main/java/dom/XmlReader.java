@@ -13,6 +13,45 @@ public class XmlReader {
 	}
 	public static void lireXml(){
 
+				DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+				try {
+					
+					DocumentBuilder buidler =factory.newDocumentBuilder();
+					Document doc = buidler.parse("src/phone.xml");
+					
+					Element root = doc.getDocumentElement();
+					System.out.println("la racine est: " + root.getNodeName());
+
+					NodeList listPhone = doc.getElementsByTagName("Phone");
+			        System.out.println("le nombre de téléphones est : " + listPhone.getLength());
+
+					for(int i =0; i<listPhone.getLength() ;i++){
+						Node phoneNode = listPhone.item(i);
+						Element phoneElement = (Element) phoneNode;
+						String note = phoneElement.getAttribute("note");
+						Element marque = getFirstChildElement(phoneNode);
+						Element modele = getNextElement(getFirstChildElement(phoneNode));
+						String marqueText = marque.getTextContent();
+						String modeleText = modele.getTextContent();
+						Element date = getNextElement(getNextElement(getFirstChildElement(phoneNode)));
+						String jour = date.getAttribute("jour");
+						String mois = date.getAttribute("mois");
+						String annee = date.getAttribute("annee");
+						System.out.println("Téléphone "+(i+1)+": "+marqueText+" "+modeleText+ "   "+ note+"*" + " - Sortie le : "+ jour + "-" + mois + "-" + annee);
+                    }
+
+				} catch (ParserConfigurationException e) {
+					e.printStackTrace();
+				} catch (SAXException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+	}
+	
+
+	public static void example(){
+
 		// API used to convert XML into a DOM object tree
 				DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 				try {
@@ -26,11 +65,9 @@ public class XmlReader {
 					
 					//Affichage information sur l'auteur
 					NodeList listAuteur = doc.getElementsByTagName("auteur");
-			                          System.out.println("le nombre d'auteur est : " + listAuteur.getLength());
+			        System.out.println("le nombre d'auteur est : " + listAuteur.getLength());
 
-
-
-                                                                    //parcourir la liste
+					//parcourir la liste
 					for(int i =0; i<listAuteur.getLength() ;i++){
 						Node auteurNode = listAuteur.item(i);
 						Element auteurElement = (Element) auteurNode ;
@@ -67,7 +104,7 @@ public class XmlReader {
 						}
 						System.out.println("----------------------------");
 						//section = getNextElement(section);
-						NodeList listchapitre = doc.getElementsByTagName("chapitre");
+						//NodeList listchapitre = doc.getElementsByTagName("chapitre");
 						/*for(int k=0; k<listchapitre.getLength(); k++){
 							
 							String attrChaptitre = cahpitre.getAttribute("titre");

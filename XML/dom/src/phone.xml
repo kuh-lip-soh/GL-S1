@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Phones>
+  <Phone note="4">
+    <Marque>Samsung</Marque>
+    <Modele>S20</Modele>
+    <Date jour="10" mois="02" annee="2020" />
+    <Vente>10</Vente>
+    <Specs>
+      <Sim double="true" />
+    </Specs>
+  </Phone>
+  <Phone note="5">
+    <Marque>Google</Marque>
+    <Modele>Pixel 7</Modele>
+    <Date jour="20" mois="02" annee="2022" />
+    <Vente>8</Vente>
+    <Specs>
+      <Sim double="false" />
+    </Specs>
+  </Phone>
+  <Phone note="5">
+    <Marque>Google</Marque>
+    <Modele>Pixel 6A</Modele>
+    <Date jour="20" mois="02" annee="2022" />
+    <Vente>88</Vente>
+    <Specs>
+      <Sim double="false" />
+    </Specs>
+  </Phone>
+</Phones>

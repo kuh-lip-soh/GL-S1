@@ -5,7 +5,7 @@
     <Phone note="4">
         <Marque>Samsung</Marque>
         <Modele>S20</Modele>
-        <Date>10-02-2020</Date>
+        <Date>2020-02-10</Date>
         <Vente>10</Vente>
         <Specs>
             <Sim double="true"/>
@@ -14,7 +14,7 @@
     <Phone note="5">
         <Marque>Google</Marque>
         <Modele>Pixel 7</Modele>
-        <Date>20-03-2022</Date>
+        <Date>2022-02-20</Date>
         <Vente>8</Vente>
         <Specs>
             <Sim double="false"/>
@@ -23,7 +23,7 @@
     <Phone note="5">
         <Marque>Google</Marque>
         <Modele>Pixel 6A</Modele>
-        <Date>10-08-2021</Date>
+        <Date>2021-08-10</Date>
         <Vente>88</Vente>
         <Specs>
             <Sim double="false"/>

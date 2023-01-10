@@ -2,9 +2,13 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<xs:complexType name="TSim">
+    <xs:attribute name="double" type="xs:boolean"/>
+</xs:complexType>
+
 <xs:complexType name="TSpecs">
     <xs:sequence>
-        <xs:element name="Sim" type="xs:boolean"/>
+        <xs:element name="Sim" type="TSim"/>
     </xs:sequence>
 </xs:complexType>
 
@@ -16,7 +20,7 @@
         <xs:element name="Vente" type="xs:integer"/>
         <xs:element name="Specs" type="TSpecs"/>
     </xs:sequence>
-    <xs:attribute name="note" type="xs:integer"/>
+    <xs:attribute name="note" type="xs:int"/>
 </xs:complexType>
 
 
