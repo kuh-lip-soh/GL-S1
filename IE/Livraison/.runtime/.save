@@ -1,0 +1,6 @@
+#Sun Jan 22 01:19:08 WAT 2023
+org.modelio.app.module.propertytab.SysMLArchitect\ v3.10.00\ GModule\ @file\:///C\:/Users/Zakaria/.modelio/4.1/modules/SysMLArchitect_3.10.00/SysMLArchitect_3.10.00.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.module.propertytab.SysMLArchitect\ v3.10.00\ GModule\ @file\:///C\:/Users/Zakaria/.modelio/4.1/modules/SysMLArchitect_3.10.00/SysMLArchitect_3.10.00.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.module.propertytab.SysMLArchitect\ v3.10.00\ GModule\ @file\:///C\:/Users/Zakaria/.modelio/4.1/modules/SysMLArchitect_3.10.00/SysMLArchitect_3.10.00.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.diagram.editor.OpenedDiagrams0='Diagramme de cas d'utilisation livraison use case' {784368c0-6cf9-4631-9bfb-78a49441c87f} Standard.UseCaseDiagram
+org.modelio.app.module.propertytab.SysMLArchitect\ v3.10.00\ GModule\ @file\:///C\:/Users/Zakaria/.modelio/4.1/modules/SysMLArchitect_3.10.00/SysMLArchitect_3.10.00.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts

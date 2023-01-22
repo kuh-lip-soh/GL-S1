@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Livraison Use case" version="4">
+  <OBJECT>
+    <ID name="Livraison Use case" mc="Standard.Project" uid="92462235-cfe7-4aae-87bd-ddadcf1ac6a0"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Livraison Use case]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="livraison use case" mc="Standard.Package" uid="56089127-ed18-472d-8af3-e356e3c1def9"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Livraison Use case" mc="Infrastructure.DiagramSet" uid="14fe1552-caaf-498c-b206-b31b6c4d7e79"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

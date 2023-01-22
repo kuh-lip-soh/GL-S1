@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Livraison Diagramme de définition de blocs" version="4">
+  <OBJECT>
+    <ID name="Livraison Diagramme de définition de blocs" mc="Standard.StaticDiagram" uid="313e9b1b-e108-4850-aa92-5b7c26f7ab17"/>
+    <PID name="Livraison" mc="Standard.Package" uid="56089127-ed18-472d-8af3-e356e3c1def9"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">1</ATT>
+      <ATT name="UiData"><![CDATA[eJztU01PAjEQ/SvN3iksoGiCGGQNMa5iQE08kdntiNV+kLYo++/tsqCCQtAYuXja7kzfzHvTN83jqRTkGY3lWh0FIa0E5LjV7CWPmDrCmQ8FxGVjPAq0GVGpGQqu6UQKah04/sQ4jAxIiow7bSgKlKicLbLpItuVg9l/VPwHRMKjNsO3vpWg1bwyeozGZUSB9O0EZHriInDgc7cgJjjnoSZCBOVWs7wAfIIOXCYwWFJR/UrFgp3N71uaaoO0wG7BrwM2BYZs0ex06vp4v2WXS19ijiQ4dVFy5jnOjvnBZlauSiwXYjbJNijAIfMsViZ2kYfIcx7JhwOKgWF06UVILazhYRImJQwrB6X6wV6lBHBYLe0ljbS6f9+AJGxsnroA686VflExJChWKAyc4Wrkg+VZdKMMLfBMdbQca8udH//PS3UeuGAG8woxt/nw5p+1iJirJ7v99ZNRZODF04khQ7Nsudomy73tCSvwloq8gl+UpYJ/syffQ+3YZpyt8UPUpXH77rQ/PGl3zrv93s1l9DsW2WL1Pj7au30+mKH+b4bdmOG6d/XbLlibegVbI4p7]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAIAAAAmdTLBAAAAGElEQVR4nGP4TxlgGNU/qn9U/6j+EaofAB8cJiE1IQRUAAAAAElFTkSuQmCC]]></ATT>
+      <ATT name="Name"><![CDATA[Livraison Diagramme de définition de blocs]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="BlockDiagram" mc="Infrastructure.Stereotype" uid="00bc42ac-0000-1016-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="424373c2-de4c-46ef-8b43-c2c8e20d7220"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

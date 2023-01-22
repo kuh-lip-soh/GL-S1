@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Livraison" version="4">
+  <OBJECT>
+    <ID name="Livraison" mc="Standard.Package" uid="56089127-ed18-472d-8af3-e356e3c1def9"/>
+    <PID name="Livraison Use case" mc="Standard.Project" uid="92462235-cfe7-4aae-87bd-ddadcf1ac6a0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Livraison]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Client" mc="Standard.Actor" uid="d513d059-a7cd-4ccc-a2e4-cb819a9a7823"/>
+        <COMPID name="Planifier" mc="Standard.UseCase" uid="43d9c842-9590-432a-93cb-0b614108fcec"/>
+        <COMPID name="Gérant" mc="Standard.Actor" uid="22c7408c-a595-4a1c-9103-06ed555ef8cf"/>
+        <COMPID name="Récéptioner un colis" mc="Standard.UseCase" uid="89bbdf07-1946-443b-b815-7f6824dce213"/>
+        <COMPID name="Retours" mc="Standard.UseCase" uid="17177a81-bb5a-4d65-8b11-f4a781e37116"/>
+        <COMPID name="Annulation" mc="Standard.UseCase" uid="0fa3944c-7b04-4a12-b5a7-1a0360f32f4b"/>
+        <COMPID name="Endommagé" mc="Standard.UseCase" uid="27da3f86-b0da-4665-ae43-cadf10f57bc3"/>
+        <COMPID name="Etat des livraisons" mc="Standard.UseCase" uid="9668b00b-e00f-4a8e-b204-b4ee7f014741"/>
+        <COMPID name="En route" mc="Standard.UseCase" uid="dd8ef523-035d-4d21-b5d8-a58b03b9ae98"/>
+        <COMPID name="Non démarré" mc="Standard.UseCase" uid="e0501792-cad9-46ed-ac67-96f33e2443ee"/>
+        <COMPID name="Arrivé" mc="Standard.UseCase" uid="b54cb311-672d-42b5-b424-5b109536f8bf"/>
+        <COMPID name="Livreur" mc="Standard.Actor" uid="2499ae3c-7775-4d7b-8fd4-21e8602481c2"/>
+        <COMPID name="Livrer un colis" mc="Standard.UseCase" uid="f569ba6e-b35b-4269-8b92-fe0a1f0a5b5c"/>
+        <COMPID name="Express" mc="Standard.UseCase" uid="f1d74b97-ae32-4072-9a11-1cb8b411eceb"/>
+        <COMPID name="Point relais" mc="Standard.UseCase" uid="9581694d-2d24-49cd-bbf1-70b821f39cc2"/>
+        <COMPID name="A domicile" mc="Standard.UseCase" uid="6a7b3cad-e317-4434-8320-c9046a4bfd17"/>
+        <COMPID name="Chauffeur" mc="Standard.Actor" uid="6914288d-ddf3-47cf-a3a1-8abd7b54e9bc"/>
+        <COMPID name="Transporter les colis" mc="Standard.UseCase" uid="a01c5376-74f7-40d3-95f1-a5094b8fdbff"/>
+        <COMPID name="Camion" mc="Standard.UseCase" uid="295a4b92-b482-4e97-a3eb-e727b0971b06"/>
+        <COMPID name="Moto" mc="Standard.UseCase" uid="196edcc9-e249-4f3c-9939-a5a9b6975bdc"/>
+        <COMPID name="Envoyer un colis" mc="Standard.UseCase" uid="6a7625e6-fb1a-479a-83d4-4f07f8b60e24"/>
+        <COMPID name="Choix du mode de paiement" mc="Standard.UseCase" uid="3e803062-b48e-4232-84d9-6a28ef41684c"/>
+        <COMPID name="En ligne" mc="Standard.UseCase" uid="a8e1a578-4a8e-4613-a8e0-446f10981bfc"/>
+        <COMPID name="Après livraison" mc="Standard.UseCase" uid="d3c8558c-2e3a-419f-9317-7324764af397"/>
+        <COMPID name="Avant livraison" mc="Standard.UseCase" uid="2811bac3-9202-4717-9fbb-9b7ea19a1f05"/>
+        <COMPID name="Choix de la méthode de livraison" mc="Standard.UseCase" uid="37d95d17-b37f-43ca-8824-fd6171a0dbb5"/>
+        <COMPID name="Valider livraison" mc="Standard.UseCase" uid="b845452c-e4d6-43b5-8507-c691cc6a23e2"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation livraison use case" mc="Standard.UseCaseDiagram" uid="784368c0-6cf9-4631-9bfb-78a49441c87f"/>
+        <COMPID name="Livraison Diagramme de définition de blocs" mc="Standard.StaticDiagram" uid="313e9b1b-e108-4850-aa92-5b7c26f7ab17"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
