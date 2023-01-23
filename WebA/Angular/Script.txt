@@ -1,0 +1,95 @@
+-----K-----
+Angular
+In this presentation we have 2 distinct parts, first is definition and some back story about Angular represented with the Angular JS logo
+and second is the demo we made up that use gps tracking files and some extra data about that activity and put all of them in a nice and clean interface even showing the whole run on an interactive map
+so lets start
+
+-----C-----
+
+Angular is a free and open-source framework that was once javascript based and called Angular JS but it has been entirely
+rewritten in typescript by the Angular team at google and the JS one was originally created by the same team
+Its purpose is to simplify both app development and testing by providing client-side model-view-controller (MVC)
+and model-view-viewmodel (MVVM) architectures with the addition to components commonly used in progressive web apps
+
+let's scope into a couple of older versions of it to see from where it came from and where is it now
+Version 2 is actually the base version of the modern Angular so its the brand new rewrite of Angular JS in typescript in Fall 2016
+Version 6 came out in May 2018 with extremely useful tools such as CLI which you will see will be REALLY useful for creating new components and so
+Version 9 had huge improvements regarding type checking, build errors and build times which led to more efficient and less time consuming testings, and it came out in Feb 2020
+and finally Version 15 which is the latest and is used in our demo, well they were'nt huge features as the few versions quoted before
+but there was constant updating and 7 whole new versions came out in less than 3 years.
+And there is one more thing about angular is that it's heavily backwards compatible meaning you will rarely fall in the trap of updating your framework mid-project and have it entirely break and spend
+precious time to fix that simple mistake
+
+That was it, lets go to the GPS Activity Mapper demo now
+
+so firsts things first we need nodejs which provides us npm, its a java script packagar manager
+and we need typescript too because it's the main language for modern Angular and for our demo
+and then we bring the Angular Core and CLI using npm too, create a project and run it
+and we add bootstrap too for later
+
+so lets put things down and write all what we need for this demo
+first view is going to be a list of all our tracking maps
+and then the second one is the detailled view of any item clicked from the first list
+so angular cli makes it simple, ng generate component activty-list and map
+it created 4 new files each and both updated the app.module.ts file
+app module is essentially where every component, service or module we use are declared or imported
+
+inside our component lets import a model through an interface that will serve us just as laravel models
+so in the model we put all our data types including the gpxdata
+and to make it very simple for this demo we are going to write all our list of activities hardly in the code in a array
+
+now we may need a service for this component, cli is here and here's the command ng generate service activty
+lets import what we need and start writing functions
+so have getActivities to get all of them in an array
+getTotalActivities to get the count of them
+getTotalDistance to sum up all distances
+and getLastDate to find the last activity
+
+back to component, we inject the service in the constructor
+and on we may declare all our local variables and initialize them with the ones we want to get on ngOnInit
+we can now bind those variables on our html file
+Then make a table to show each activity separately using an ngFor which is just a foreach in laravel
+we also have some bootstrap classes to make it look nice a bit of css and here is the first view 
+
+-----K-----
+
+now those activities aren't clickable yet and we dont have our second view either
+lets see now what we want for our detailled view
+we want all the data about that activity to be displayed and since we have that gpx file, we can display it on an interactive map
+
+for that we may need 3 libraries, leaflet which generates the map and the gps track on it
+and leaflet-omnivore which converts any gps format to GeoJson format to leaflet since that's the only thing it can use
+and we also need the mapbox package which our open source map provider
+
+and before we may start our second view, for navigation purposes we have to setup a router, its basically the routes file from laravel but in a simpler way i found
+so we add a path, and to which component it leads, for the second we add also the id parameter
+and we have to import this router in the app.module.ts file and add it in the import array
+
+finally we can start the map component
+so we declare our variables according to what data an activity has
+we initialize only the id since its coming from the route, we have to get through our service which will get the param in it that is "id"
+and on our service we write a little function that returns the particular activity id and return it back to the component
+
+since we are here lets declare 2 global vars for Leaflet and omnivore and setup the style of the track, this is the color of the line, thickness and opacity, and we may forget it for now
+then we create our map, first thing we use leaflet to set our var map to the 'map' name we may call later in html and set whithin it some default values
+and we apply a tilelayer, which is like the map pictures that we get from mapbox, so we according to mapbox documentation this is the request their api is waiting, when we fill those fillables of course
+we put the id here which is just one many mapbox's map style
+tileSize is for the size of the pictures we are requesting so its gonna be 256x256
+and the accessToken which is a private key that i may not share
+we close that and we add it to the map
+you remember the style we made earlier, are gonna put it into a customlayer
+We create a new var and call omnivore to convert our gpx data and getting the right one from the id we are currently on of course
+and then we use our customlayer and we add some methods to fix the map bounds and we add it our map var
+and that's it
+we initialize those vars with the ones from the incoming activity but after the view is initialized
+we write down our html with bootstrap classes and css as earlier and we're done, its working flawlessly
+
+now lets just go back to our first view and put links on each item using routerLink, its generating links for each activity inside our for loop
+
+
+-----K-----
+
+*showing some bits of the demo*
+
+-----C or K-----
+Thank you for your attention
